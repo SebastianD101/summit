@@ -1,36 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUMMIT</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="workout-icon-3.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Firebase Login Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="login-style.css" />
 </head>
 
 <body>
-    <header>
-        <div class="header-2">
-            <div class="header-1">
-                <a href="" class="logo"><i class="fa-solid fa-dumbbell"></i></i>SUMMIT</a>
-            </div>
-            <div id="menu-bar" class="fas fa-bars"></div>
-            <nav class="navbar">
-                <a href="index.html">home</a>
-                <a href="workouts.html">workouts</a>
-                <a href="meal.html">meal plans</a>
-                <a href="tutorials.html">tutorials</a>
-                <a href="signup.html">signup</a>
-            </nav>
+
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
         </div>
-    </header>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="username@email.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Password" id="password"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button id="Register">Register</button>
+        </form>
+    </div>
 
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyB95mjTwAQ_orgKfnsoVTVUlLRtaSyBUq4",
+            authDomain: "loginpage-ff59f.firebaseapp.com",
+            projectId: "loginpage-ff59f",
+            storageBucket: "loginpage-ff59f.appspot.com",
+            messagingSenderId: "483032895692",
+            appId: "1:483032895692:web:d6cd201dbdfb7640053269",
+            measurementId: "G-BTCQF5JNQS"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="login-script.js"></script>
 
-
-    <script src="script.js"></script>
 </body>
 
 </html>
