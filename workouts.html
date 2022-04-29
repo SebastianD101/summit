@@ -29,12 +29,85 @@
     </header><br>
     
     <center>
+        <h1>Workout Set</h1>
+    </center>
+    <div class="type">
+        <div class="workout" id="chest_container" style="display: none;">
+            <center>
+                <h1>Chest</h1>
+                <h2 style="display: none;" id="chest_1">Flat Bench Press</h2>
+                <h2 style="display: none;" id="chest_2">Incline Bench Press</h2>
+                <h2 style="display: none;" id="chest_3">Decline Bench Press</h2>
+                <h2 style="display: none;" id="chest_4">Push Ups</h2>
+                <h2 style="display: none;" id="chest_5">Cable Crossover</h2>
+                <h2 style="display: none;" id="chest_6">Chest Dips</h2>
+            </center>
+        </div>
+        <div class="workout" id="back_container" style="display: none;">
+            <center>
+                <h1>Back</h1>
+                <h2 style="display: none;" id="back_1">Dumbell Rows</h2>
+                <h2 style="display: none;" id="back_2">Lat Pulldown</h2>
+                <h2 style="display: none;" id="back_3">Single Arm D-Handle Rows</h2>
+                <h2 style="display: none;" id="back_4">Pull Ups</h2>
+                <h2 style="display: none;" id="back_5">Cable Rows</h2>
+                <h2 style="display: none;" id="back_6">Standing Cable Bars Pulldown</h2>
+            </center>
+        </div>
+        <div class="workout" id="legs_container" style="display: none;">
+            <center>
+                <h1>Legs</h1>
+                <h2 style="display: none;" id="legs_1">Barbell Squat</h2>
+                <h2 style="display: none;" id="legs_2">Leg Curl</h2>
+                <h2 style="display: none;" id="legs_3">Leg Extension</h2>
+                <h2 style="display: none;" id="legs_4">Romanian Deadlift</h2>
+                <h2 style="display: none;" id="legs_5">Bulgarian Split Squats</h2>
+                <h2 style="display: none;" id="legs_6">Standing Calf Raises</h2>
+            </center>
+        </div>
+        <div class="workout" id="triceps_container" style="display: none;">
+            <center>
+                <h1>Triceps</h1>
+                <h2 style="display: none;" id="triceps_1">Cable Rope Pushdown</h2>
+                <h2 style="display: none;" id="triceps_2">Skull Crushers</h2>
+                <h2 style="display: none;" id="triceps_3">Tricep Pressdown</h2>
+                <h2 style="display: none;" id="triceps_4">Diamond Pushup</h2>
+                <h2 style="display: none;" id="triceps_5">Overhead Tricep Extension</h2>
+                <h2 style="display: none;" id="triceps_6">Close Grip Bench Press</h2>
+            </center>
+        </div>
+        <div class="workout" id="biceps_container" style="display: none;">
+            <center>
+                <h1>Biceps</h1>
+                <h2 style="display: none;" id="biceps_1">Standing Dumbell Hammer Curls</h2>
+                <h2 style="display: none;" id="biceps_2">Seated Incline Dumbell Curls</h2>
+                <h2 style="display: none;" id="biceps_3">Face Away Cable Curls</h2>
+                <h2 style="display: none;" id="biceps_4">Preacher Curls</h2>
+                <h2 style="display: none;" id="biceps_5">Barbell Curls</h2>
+                <h2 style="display: none;" id="biceps_6">Chin-ups</h2>
+            </center>
+        </div>
+        <div class="workout" id="shoulders_container" style="display: none;">
+            <center>
+                <h1>Shoulders</h1>
+                <h2 style="display: none;" id="shoulders_1">Face-Pulls</h2>
+                <h2 style="display: none;" id="shoulders_2">Shoulder Press</h2>
+                <h2 style="display: none;" id="shoulders_3">Overhead Press</h2>
+                <h2 style="display: none;" id="shoulders_4">Lat Raises</h2>
+                <h2 style="display: none;" id="shoulders_5">Front Raises</h2>
+                <h2 style="display: none;" id="shoulders_6">Shoulder Shrugs</h2>
+            </center>
+        </div>
+    </div>
+
+
+    <center>
         <h1>Chest</h1>
     </center>
     <div class="type">
         <div class="workout">
             <center>
-                <button>Flat Bench Press</button>
+                <button onclick="chest_1()">Flat Bench Press</button>
                 <iframe src="https://www.youtube.com/embed/-MAABwVKxok" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -42,7 +115,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Incline Bench Press</button>
+                <button onclick="chest_2()">Incline Bench Press</button>
                 <iframe src="https://www.youtube.com/embed/SrqOu55lrYU" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -50,7 +123,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Decline Bench Press</button>
+                <button onclick="chest_3()">Decline Bench Press</button>
                 <iframe src="https://www.youtube.com/embed/OR6WM5Z2Hqs" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -58,7 +131,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Pushup</button>
+                <button onclick="chest_4()">Pushup</button>
                 <iframe src="https://www.youtube.com/embed/IODxDxX7oi4" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -66,7 +139,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Cable Crossover</button>
+                <button onclick="chest_5()">Cable Crossover</button>
                 <iframe src="https://www.youtube.com/embed/taI4XduLpTk" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -74,7 +147,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Chest Dips</button>
+                <button onclick="chest_6()">Chest Dips</button>
                 <iframe src="https://www.youtube.com/embed/yN6Q1UI_xkE" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -88,7 +161,7 @@
     <div class="type">
         <div class="workout">
             <center>
-                <button>Dumbell Rows</button>
+                <button onclick="back_1()">Dumbell Rows</button>
                 <iframe src="https://www.youtube.com/watch?v=roCP6wCXPqo" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -96,7 +169,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Lat Pulldown</button>
+                <button onclick="back_2()">Lat Pulldown</button>
                 <iframe src="https://www.youtube.com/watch?v=AOpi-p0cJkc" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -104,7 +177,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Single Arm D-Handle Rows</button>
+                <button onclick="back_3()">Single Arm D-Handle Rows</button>
                 <iframe src="https://www.youtube.com/watch?v=eM162KNncD8" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -112,7 +185,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Pull Ups</button>
+                <button onclick="back_4()">Pull Ups</button>
                 <iframe src="https://www.youtube.com/watch?v=eGo4IYlbE5g" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -120,7 +193,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Cable Rows</button>
+                <button onclick="back_5()">Cable Rows</button>
                 <iframe src="https://www.youtube.com/watch?v=GZbfZ033f74" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -128,7 +201,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Standing Cable Bars Pulldown</button>
+                <button onclick="back_6()">Standing Cable Bars Pulldown</button>
                 <iframe src="https://www.youtube.com/watch?v=AjCCGN2tU3Q" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -142,7 +215,7 @@
     <div class="type">
         <div class="workout">
             <center>
-                <button>Barbell Squat</button>
+                <button onclick="legs_1()">Barbell Squat</button>
                 <iframe src="https://www.youtube.com/embed/-MAABwVKxok" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -150,7 +223,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Leg Curl</button>
+                <button onclick="legs_2()">Leg Curl</button>
                 <iframe src="https://www.youtube.com/embed/SrqOu55lrYU" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -158,7 +231,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Leg Extension</button>
+                <button onclick="legs_3()">Leg Extension</button>
                 <iframe src="https://www.youtube.com/embed/OR6WM5Z2Hqs" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -166,14 +239,14 @@
         </div>
         <div class="workout">
             <center>
-                <button>Romanian Deadlift</button>
+                <button onclick="legs_4()">Romanian Deadlift</button>
                 <iframe src="https://www.youtube.com/embed/IODxDxX7oi4" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </center>
         </div>
         <div class="workout">
-            <center>
+            <center onclick="legs_5()">
                 <button>Bulgarian Split Squats</button>
                 <iframe src="https://www.youtube.com/embed/taI4XduLpTk" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -181,7 +254,7 @@
             </center>
         </div>
         <div class="workout">
-            <center>
+            <center onclick="legs_6()">
                 <button>Standing Calf Raises</button>
                 <iframe src="https://www.youtube.com/embed/yN6Q1UI_xkE" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -196,7 +269,7 @@
     <div class="type">
         <div class="workout">
             <center>
-                <button>Cable Rope Pushdown</button>
+                <button onclick="triceps_1()">Cable Rope Pushdown</button>
                 <iframe src="https://www.youtube.com/embed/-MAABwVKxok" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -204,7 +277,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Skull Crushers</button>
+                <button onclick="triceps_2()">Skull Crushers</button>
                 <iframe src="https://www.youtube.com/embed/SrqOu55lrYU" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -212,7 +285,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Triceps Pressdown</button>
+                <button onclick="triceps_3()">Triceps Pressdown</button>
                 <iframe src="https://www.youtube.com/embed/OR6WM5Z2Hqs" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -220,7 +293,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Diamond Pushup</button>
+                <button onclick="triceps_4()">Diamond Pushup</button>
                 <iframe src="https://www.youtube.com/embed/IODxDxX7oi4" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -228,7 +301,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Overhead Tricep Extension</button>
+                <button onclick="triceps_5()">Overhead Tricep Extension</button>
                 <iframe src="https://www.youtube.com/embed/taI4XduLpTk" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -236,7 +309,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Close Grip Bench Press</button>
+                <button onclick="triceps_6()">Close Grip Bench Press</button>
                 <iframe src="https://www.youtube.com/embed/yN6Q1UI_xkE" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -250,7 +323,7 @@
     <div class="type">
         <div class="workout">
             <center>
-                <button>Standing Dumbell Hammer Curls</button>
+                <button onclick="biceps_1()">Standing Dumbell Hammer Curls</button>
                 <iframe src="https://www.youtube.com/watch?v=roCP6wCXPqo" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -258,7 +331,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Seated Incline Dumbell Curls</button>
+                <button onclick="biceps_2()">Seated Incline Dumbell Curls</button>
                 <iframe src="https://www.youtube.com/watch?v=AOpi-p0cJkc" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -266,7 +339,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Face Away Cable Curls</button>
+                <button onclick="biceps_3()">Face Away Cable Curls</button>
                 <iframe src="https://www.youtube.com/watch?v=eM162KNncD8" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -274,7 +347,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Preacher Curls</button>
+                <button onclick="biceps_4()">Preacher Curls</button>
                 <iframe src="https://www.youtube.com/watch?v=eGo4IYlbE5g" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -282,7 +355,7 @@
         </div>
         <div class="workout">
             <center>
-                <button>Barbell Curls</button>
+                <button onclick="biceps_5()">Barbell Curls</button>
                 <iframe src="https://www.youtube.com/watch?v=GZbfZ033f74" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -290,7 +363,61 @@
         </div>
         <div class="workout">
             <center>
-                <button>Chin-ups</button>
+                <button onclick="biceps_6()">Chin-ups</button>
+                <iframe src="https://www.youtube.com/watch?v=AjCCGN2tU3Q" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </center>
+        </div>
+    </div>
+
+    <center>
+        <h1>Shoulders</h1>
+    </center>
+    <div class="type">
+        <div class="workout">
+            <center>
+                <button onclick="shoulders_1()">Face Pulls</button>
+                <iframe src="https://www.youtube.com/watch?v=roCP6wCXPqo" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </center>
+        </div>
+        <div class="workout">
+            <center>
+                <button onclick="shoulders_2()">Shoulder Press</button>
+                <iframe src="https://www.youtube.com/watch?v=AOpi-p0cJkc" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </center>
+        </div>
+        <div class="workout">
+            <center>
+                <button onclick="shoulders_3()">Overhead Press</button>
+                <iframe src="https://www.youtube.com/watch?v=eM162KNncD8" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </center>
+        </div>
+        <div class="workout">
+            <center>
+                <button onclick="shoulders_4()">Lat Raises</button>
+                <iframe src="https://www.youtube.com/watch?v=eGo4IYlbE5g" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </center>
+        </div>
+        <div class="workout">
+            <center>
+                <button onclick="shoulders_5()">Front Raises</button>
+                <iframe src="https://www.youtube.com/watch?v=GZbfZ033f74" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </center>
+        </div>
+        <div class="workout">
+            <center>
+                <button onclick="shoulders_6()">Shoulder Shrugs</button>
                 <iframe src="https://www.youtube.com/watch?v=AjCCGN2tU3Q" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
